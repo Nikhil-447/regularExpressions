@@ -2,7 +2,7 @@
 
 shopt -s extglob
 pat="^[A-Z]{1}[a-zA-Z]{2,}$"
-echo "Enter The Fisrt Name"
+echo "Enter The Last Name"
 read name
 
 if [[ $pat =~ $name ]]
