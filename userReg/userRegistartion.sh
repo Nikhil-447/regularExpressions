@@ -26,7 +26,16 @@ do
            echo "Success"
         else
            echo "Invalid Entry, Please Try Again"
-           continue;
         fi
-
+	continue;
+	pat2="^[0-9a-zA-Z+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})*$]"
+	echo "Enter your email ID"
+	read email
+	if [[ $pat2 =~ $email ]]
+	then
+	   echo "Success"
+	else
+	   echo "Invalid email ID, please try again"
+	fi
+	continue;
 done
