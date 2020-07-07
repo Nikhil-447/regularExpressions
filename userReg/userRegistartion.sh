@@ -8,6 +8,6 @@ if [[ $name =~ $pat ]]
 then
    echo "Success"
 else
-   echo "Invalid First Name, Retry"
+   echo "Invalid Entry, Please Try Again"
 fi
 
