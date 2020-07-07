@@ -1,10 +1,11 @@
 #!/bin/bash -x
 
-pat="(^[A-Z]*[a-z A-Z]){3,}"
+shopt -s extglob
+pat="^[A-Z]{1}[a-zA-Z]{2,}$"
 echo "Enter The Fisrt Name"
 read name
 
-if [[ $name =~ $pat ]]
+if [[ $pat =~ $name ]]
 then
    echo "Success"
 else
