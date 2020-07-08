@@ -48,4 +48,14 @@ do
 	   echo "Invalid Mobile Number, please insert again"
 	continue;
 	fi
+	pat4="^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]{3,})\w{6,13}$"
+	echo "Please enter your password"
+	read pswd
+	if [[ $pswd =~ $pat4 ]]
+	then
+	   echo "Success"
+	else
+	   echo "Wrong Password, please type again"
+	continue;
+	fi
 done
