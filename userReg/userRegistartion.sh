@@ -38,4 +38,14 @@ do
 	   echo "Invalid email ID, please try again"
 	fi
 	continue;
+	pat3="([+]?\d{1,2}[.-\s]?)?(\d{3}[.-]?){2}\d{4}"
+	echo "Enter your Mobile Number"
+	read mNum
+	if [[ $pat3 =~ $mNUm ]]
+	then
+	   echo "Success"
+	else
+	   echo "Invalid Mobile Number, please insert again"
+	continue;
+	fi
 done
